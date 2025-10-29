@@ -1,0 +1,25 @@
+{
+  "name": "squadcast-slack-connector",
+  "version": "1.0.0",
+  "description": "Cloudflare Worker middleware to forward Squadcast webhook events to Slack workflow",
+  "main": "src/index.ts",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [
+    "squadcast",
+    "slack",
+    "webhook",
+    "cloudflare-workers"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20240624.0",
+    "typescript": "^5.5.3",
+    "wrangler": "^3.55.0"
+  }
+}
+

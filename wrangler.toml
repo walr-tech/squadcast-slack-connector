@@ -1,0 +1,11 @@
+name = "squadcast-slack-connector"
+main = "src/index.ts"
+compatibility_date = "2024-01-01"
+
+[env.production.vars]
+# Environment variables can be set via wrangler secret put
+# Example: wrangler secret put SLACK_WEBHOOK_URL
+
+# Example configuration (not set by default):
+# SLACK_WEBHOOK_URL = "https://hooks.slack.com/workflows/your-workflow-url"
+
