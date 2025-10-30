@@ -30,8 +30,16 @@ function flattenObject(obj: any, prefix = '', result: Record<string, any> = {}):
  */
 export default {
   async fetch(request: Request, env: Env, ctx: ExecutionContext): Promise<Response> {
+    // Log all incoming requests for debugging
+    console.log('Incoming request:', {
+      method: request.method,
+      url: request.url,
+      headers: Object.fromEntries(request.headers.entries()),
+    });
+
     // Only accept POST requests
     if (request.method !== 'POST') {
+      console.log('Rejected non-POST request:', request.method);
       return new Response('Method not allowed', { status: 405 });
     }
 

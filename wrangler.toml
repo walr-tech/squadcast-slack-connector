@@ -9,3 +9,10 @@ compatibility_date = "2024-01-01"
 # Example configuration (not set by default):
 # SLACK_WEBHOOK_URL = "https://hooks.slack.com/workflows/your-workflow-url"
 
+[observability]
+enabled = true
+
+[observability.logs]
+enabled = true
+head_sampling_rate = 1
+invocation_logs = true
