@@ -1,11 +1,12 @@
 {
   "name": "squadcast-slack-connector",
   "version": "1.0.0",
-  "description": "Cloudflare Worker middleware to forward Squadcast webhook events to Slack workflow",
+  "description": "Cloudflare Worker that receives Squadcast webhook events (incidents and status page updates) and posts formatted alerts to Slack using the Bot API",
   "main": "src/index.ts",
   "scripts": {
     "dev": "wrangler dev",
     "deploy": "wrangler deploy",
+    "tail": "wrangler tail",
     "typecheck": "tsc --noEmit"
   },
   "keywords": [
@@ -19,7 +20,6 @@
   "devDependencies": {
     "@cloudflare/workers-types": "^4.20240624.0",
     "typescript": "^5.5.3",
-    "wrangler": "^3.55.0"
+    "wrangler": "^4.50.0"
   }
 }
-

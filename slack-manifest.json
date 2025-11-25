@@ -1,0 +1,30 @@
+{
+  "_metadata": {
+    "major_version": 2,
+    "minor_version": 1
+  },
+  "display_information": {
+    "name": "Walr Platform Alerts",
+    "description": "Delivers real-time Squadcast incident alerts to Slack for the Walr platform with formatted messages, severity levels, and quick access links.",
+    "background_color": "#FF6B6B"
+  },
+  "features": {
+    "bot_user": {
+      "display_name": "Walr Platform Alerts",
+      "always_online": false
+    }
+  },
+  "oauth_config": {
+    "scopes": {
+      "bot": [
+        "chat:write",
+        "chat:write.public"
+      ]
+    }
+  },
+  "settings": {
+    "org_deploy_enabled": false,
+    "socket_mode_enabled": false,
+    "token_rotation_enabled": false
+  }
+}

@@ -2,12 +2,15 @@ name = "squadcast-slack-connector"
 main = "src/index.ts"
 compatibility_date = "2024-01-01"
 
-[env.production.vars]
 # Environment variables can be set via wrangler secret put
-# Example: wrangler secret put SLACK_WEBHOOK_URL
+# Example: wrangler secret put SLACK_BOT_TOKEN
+# Example: wrangler secret put SLACK_CHANNEL_ID
 
 # Example configuration (not set by default):
-# SLACK_WEBHOOK_URL = "https://hooks.slack.com/workflows/your-workflow-url"
+# Get your bot token from https://api.slack.com/apps after creating a Slack app
+# SLACK_BOT_TOKEN = "xoxb-your-bot-token"
+# Channel ID or name where alerts should be posted (e.g., "C1234567890" or "#incidents")
+# SLACK_CHANNEL_ID = "C1234567890"
 
 [observability]
 enabled = true
